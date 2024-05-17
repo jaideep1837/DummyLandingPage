@@ -1,0 +1,116 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400&family=Public+Sans:wght@400&family=Roboto:wght@400&family=Work+Sans:wght@400&family=Yeseva+One&display=swap');
+
+/* Body and Default Font */
+body {
+  font-family: 'ui-sans-serif', Arial, sans-serif;
+  background: linear-gradient(243.52deg, #021457, #191126 31.84%, #251437 51.79%, #301941 64.24%, #6e3050) #00212d;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(243.52deg, #021457, #191126 31.84%, #251437 51.79%, #301941 64.24%, #6e3050) #00212d; !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.navbar-brand {
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white !important;
+}
+
+/* Container and Form */
+.container {
+  padding: 20px;
+  background:linear-gradient(243.52deg, #021457, #191126 31.84%, #251437 51.79%, #301941 64.24%, #6e3050) #00212d;;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+h2 {
+  font-family: 'Yeseva One', cursive;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.form-control {
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.password-type {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #1565c0;
+  border-color: #1565c0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #0d47a1;
+  border-color: #0d47a1;
+}
+
+.btn-secondary {
+  background-color: #555;
+  border-color: #555;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(243.52deg, #021457, #191126 31.84%, #251437 51.79%, #301941 64.24%, #6e3050) #00212d;;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.footer .btn-link {
+    color: white;
+}
+
+.footer .btn-link:hover {
+    color: white;
+}
+
+/* Additional Styles */
+.navbar-toggler {
+  border-color: rgba(0,0,0,.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.form-group input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
+}

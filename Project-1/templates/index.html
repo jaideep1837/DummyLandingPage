@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Landing Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/a1style.css" rel="stylesheet">
+</head>
+<body>     
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style="color: white;">DummySite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Register User</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>User Data</h2>
+        <form id="userDataForm" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="usern" placeholder="Enter username (4-32)" minlength="4" maxlength="32" pattern="[A-Za-z]{4,32}" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="passn" id="password" placeholder="Enter password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*])[A-Za-z0-9!@#$%^*]{8,16}$" required>
+            </div>
+            <div class="password-type">{ 8-16 letter, Must use a uppercase letter(A-Z), a lowercase letter(a-z), a number (0-9) and a special character @#$%^+=} </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" checked> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <select class="form-control" id="skills">
+                    <option>JS</option>
+                    <option>React</option>
+                    <option>API</option>
+                    <option>Backend</option>
+                </select>
+            </div>
+            <button type="submit" id="" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+    
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <button onclick="window.location.href='#';" class="btn btn-link">Home</button>
+            <button onclick="window.location.href='#';" class="btn btn-link">About Us</button>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <!-- <script>
+        document.getElementById('userDataForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Validate the form (this simple example assumes the form is valid if it submits)
+            alert("You're logged in successfully");
+        
+            // Optionally, store the data (for demonstration; in real scenarios, this would interact with a backend)
+        
+        });
+    </script> -->
+
+</body>
+</html>
